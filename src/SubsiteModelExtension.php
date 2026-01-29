@@ -2,12 +2,12 @@
 
 namespace Adrexia\SubsiteModelAdmins;
 
+use SilverStripe\ORM\DataQuery;
+use SilverStripe\Core\Extension;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\HiddenField;
-use SilverStripe\ORM\DataExtension;
-use SilverStripe\Subsites\Model\Subsite;
 use SilverStripe\ORM\Queries\SQLSelect;
-use SilverStripe\ORM\DataQuery;
+use SilverStripe\Subsites\Model\Subsite;
 use SilverStripe\Subsites\State\SubsiteState;
 
 
@@ -17,7 +17,7 @@ use SilverStripe\Subsites\State\SubsiteState;
  *
  * @package Subsite-modeladmins
  */
-class SubsiteModelExtension extends DataExtension {
+class SubsiteModelExtension extends Extension {
 
     private static $has_one = array(
         'Subsite' => Subsite::class

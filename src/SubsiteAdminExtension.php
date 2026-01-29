@@ -3,7 +3,7 @@
 namespace Adrexia\SubsiteModelAdmins;
 
 
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\Subsites\Model\Subsite;
 use SilverStripe\Subsites\State\SubsiteState;
 
@@ -13,7 +13,7 @@ use SilverStripe\Subsites\State\SubsiteState;
  *
  * @package subsite-modeladmins
  */
-class SubsiteAdminExtension extends DataExtension {
+class SubsiteAdminExtension extends Extension {
 
     public function updateEditForm($form){
 
